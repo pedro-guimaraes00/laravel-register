@@ -19,3 +19,4 @@ Route::get('/', function () {
 
 Route::get('/products', 'ProductsController@index');
 Route::get('/departments', 'DepartmentController@index');
+Route::get('/departments/new', 'DepartmentController@create');
