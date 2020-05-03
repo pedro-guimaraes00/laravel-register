@@ -5,6 +5,7 @@
     <div class="card border">
         <div class="card-body">
             <form action="/departments" method="POST">
+                @csrf
                 <div class="form-group">
                     <label for="nameDepartment">Nome do Departamento</label>
                     <input type="text" class="form-control" name="nameDepartment" id="nameDepartment"
