@@ -15,7 +15,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cadastro de Departamentos</h5>
                     <p class="card-text">Cadastre os departamentos dos produtos inseridos.</p>
-                    <a href="/departments" class="btn btn-primary">Cadastrar</a>
+                    <a href="/departments/new" class="btn btn-primary">Cadastrar</a>
                 </div>
             </div>
         </div>

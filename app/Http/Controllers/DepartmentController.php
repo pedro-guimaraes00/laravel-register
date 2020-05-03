@@ -14,7 +14,8 @@ class DepartmentController extends Controller
      */
     public function index()
     {
-        return view('department');
+        $department = Department::all();
+        return view('department', compact('department'));
     }
 
     /**
@@ -38,6 +39,7 @@ class DepartmentController extends Controller
         $department = new Department;
         $department->name = $request->input('nameDepartment');
         $department->save();
+        return redirect('/departments');
     }
 
     /**
