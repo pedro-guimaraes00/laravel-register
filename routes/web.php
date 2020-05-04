@@ -21,3 +21,4 @@ Route::get('/products', 'ProductsController@index');
 Route::get('/departments', 'DepartmentController@index');
 Route::post('/departments', 'DepartmentController@store');
 Route::get('/departments/new', 'DepartmentController@create');
+Route::get('/departments/delete/{id}', 'DepartmentController@destroy'); 
