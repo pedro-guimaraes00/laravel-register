@@ -61,7 +61,12 @@ class DepartmentController extends Controller
      */
     public function edit($id)
     {
-        //
+        $department = Department::find($id);
+            if(isset($department)) {
+                return view('editDepartment', compact('department'));
+            }
+
+            return redirect('/departments');
     }
 
     /**
@@ -73,7 +78,13 @@ class DepartmentController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $department = Department::find($id);
+        if(isset($department)) {
+            $department->name = $request->input('nameDepartment');
+            $department->save();
+        }
+
+        return redirect('/departments');
     }
 
     /**
