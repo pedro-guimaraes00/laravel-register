@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Product;
+use App\Department;
 
 class ProductsController extends Controller
 {
@@ -13,7 +15,8 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        return view('products');
+        $product = Product::all();
+        return view('products', compact('product'));
     }
 
     /**
@@ -23,7 +26,8 @@ class ProductsController extends Controller
      */
     public function create()
     {
-        //
+        $department = Department::all();
+        return view('newProduct', compact('department'));
     }
 
     /**
@@ -34,7 +38,13 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $product = new Product;
+        $product->name = $request->input('nameProduct');
+        $product->stock = $request->input('stockProduct');
+        $product->price = $request->input('priceProduct');
+        $product->department_id = $request->input('department');
+        $product->save();
+    
     }
 
     /**
