@@ -8,7 +8,7 @@
                 <div class="card-body">
                     <h5 class="card-title">Cadastro de produtos</h5>
                     <p class="card-text">Cadastre previamente os departamentos dos produtos.</p>
-                    <a href="/products" class="btn btn-primary">Cadastrar</a>
+                    <a href="/products/new" class="btn btn-primary">Cadastrar</a>
                 </div>
             </div>
             <div class="card border border-primary">

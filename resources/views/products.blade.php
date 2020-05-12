@@ -3,7 +3,7 @@
 
 <div class="card border">
     <div class="card-body">
-        <h5 class="card-title">Cadastro de Departamentos</h5>
+        <h5 class="card-title">Cadastro de Produtos</h5>
         @if(count($product) > 0)
         <table class="table table-ordered table-hover">
             <thead>

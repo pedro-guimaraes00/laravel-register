@@ -9,7 +9,7 @@
                 <div class="form-group">
                 <label for="nameProduct">Novo Produto</label>
                     <select class="form-control form-control-sm" name="department" id="department">
-                    <option selected>Choose...</option>
+                    <option selected>Defina o departamento</option>
                         @foreach ($department as $dept)
                             <option value="{{ $dept->id }}">{{ $dept->name }}</option>
                         @endforeach    
