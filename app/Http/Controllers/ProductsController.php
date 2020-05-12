@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
+use App\Products;
 use Illuminate\Http\Request;
 use App\Department;
 
@@ -16,7 +16,7 @@ class ProductsController extends Controller
      */
     public function index()
     {
-        $product = Product::all();
+        $product = Products::all();
         return view('products', compact('product'));
     }
 
@@ -39,12 +39,14 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        $product = new Product;
+        $product = new Products;
         $product->name = $request->input('nameProduct');
         $product->stock = $request->input('stockProduct');
         $product->price = $request->input('priceProduct');
         $product->department_id = $request->input('department');
         $product->save();
+
+        return redirect('products');
     
     }
 
