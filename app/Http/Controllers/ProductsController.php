@@ -97,7 +97,6 @@ class ProductsController extends Controller
                 $product->save();
             }
 
-        return view('products', compact('product'));
     }
 
     /**

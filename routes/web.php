@@ -27,3 +27,4 @@ Route::get('/departments/delete/{id}', 'DepartmentController@destroy');
 Route::get('/departments/edit/{id}', 'DepartmentController@edit');
 Route::get('/products/edit/{id}', 'ProductsController@edit');
 Route::post('/departments/{id}', 'DepartmentController@update');
+Route::post('/products/{id}', 'ProductsController@update');
