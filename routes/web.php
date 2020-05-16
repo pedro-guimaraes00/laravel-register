@@ -17,15 +17,26 @@ Route::get('/', function () {
     return view('index');
 });
 
+/*
+--------------------------------------------------------------------------
+Products Routes
+--------------------------------------------------------------------------
+*/
 Route::get('/products', 'ProductsController@index');
+Route::post('/products', 'ProductsController@store');
+Route::get('/products/new', 'ProductsController@create');
+Route::get('/products/delete/{id}', 'ProductsController@destroy');
+Route::get('/products/edit/{id}', 'ProductsController@edit');
+Route::post('/products/{id}', 'ProductsController@update');
+
+/*
+--------------------------------------------------------------------------
+Departments Routes
+--------------------------------------------------------------------------
+*/
 Route::get('/departments', 'DepartmentController@index');
 Route::post('/departments', 'DepartmentController@store');
-Route::post('/products', 'ProductsController@store');
 Route::get('/departments/new', 'DepartmentController@create');
-Route::get('/products/new', 'ProductsController@create');
 Route::get('/departments/delete/{id}', 'DepartmentController@destroy');
-Route::get('/products/delete/{id}', 'ProductsController@destroy');
 Route::get('/departments/edit/{id}', 'DepartmentController@edit');
-Route::get('/products/edit/{id}', 'ProductsController@edit');
 Route::post('/departments/{id}', 'DepartmentController@update');
-Route::post('/products/{id}', 'ProductsController@update');
