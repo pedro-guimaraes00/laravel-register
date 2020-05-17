@@ -9,11 +9,15 @@
         <li @if($current=="index") class="nav-item active" @else class="nav-item" @endif>
           <a class="nav-link" href="/">Home</a>
         </li>
+        <li @if($current=="clients") class="nav-item active" @else class="nav-item" @endif>
+          <a class="nav-link" href="/clients">Clientes</a>
+        </li>
         <li @if($current=="products") class="nav-item active" @else class="nav-item" @endif>
             <a class="nav-link" href="/products">Produtos</a>
           </li>
         <li @if($current=="departments") class="nav-item active" @else class="nav-item" @endif>
             <a class="nav-link" href="/departments">Departamentos</a>
         </li>
+      </ul>
     </div>
   </nav>

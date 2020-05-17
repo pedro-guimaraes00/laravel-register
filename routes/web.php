@@ -40,3 +40,16 @@ Route::get('/departments/new', 'DepartmentController@create');
 Route::get('/departments/delete/{id}', 'DepartmentController@destroy');
 Route::get('/departments/edit/{id}', 'DepartmentController@edit');
 Route::post('/departments/{id}', 'DepartmentController@update');
+
+/*
+--------------------------------------------------------------------------
+Clients Routes
+--------------------------------------------------------------------------
+*/
+Route::get('/clients', function(){
+    return view('clients');
+});
+
+Route::get('/newClient', function(){
+    return view('newClient');
+});
