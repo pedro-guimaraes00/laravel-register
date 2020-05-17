@@ -24,8 +24,12 @@
                         <td>R$ {{ $prod->price}}</td>
                         <td>{{ $prod->department_id}}</td>
                         <td>
-                            <a href="/products/edit/{{$prod->id}}" class="btn btn-sm btn-primary">Editar</a>
-                            <a href="/products/delete/{{$prod->id}}" class="btn btn-sm btn-danger">Apagar</a>
+                            <a href="/products/edit/{{$prod->id}}" class="btn btn-sm btn-primary">
+                                <img src="{{ asset('icons/pencil.svg')}}" width="20em" height="20em">
+                            </a>
+                            <a href="/products/delete/{{$prod->id}}" class="btn btn-sm btn-danger">
+                                <img src="{{ asset('icons/trash-fill.svg')}}" width="18em" height="18em">
+                            </a>
                         </td>
                     </tr>
                 @endforeach
