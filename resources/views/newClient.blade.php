@@ -4,7 +4,7 @@
 
     <div class="row">
         <div class="container">
-            <div class="card-border">
+            <div class="card border">
                 <div class="card-body">
                     <form action="/clients" method="POST">
                     @csrf

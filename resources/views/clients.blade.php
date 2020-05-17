@@ -2,8 +2,8 @@
 
 @section('body')
 
-        <div class="card border">
-            <div class="card-body">
+    <div class="card border">
+        <div class="card-body">
             <h5 class="card-title">Cadastro de Clientes</h5>
                 <table class="table table-ordered table-hover" id="tableClients">
                     <thead>
@@ -32,5 +32,9 @@
                     </tbody>
                 </table>
         </div>
+        <div class="card-footer">
+            <a href="/clients/new" class="btn btn-sm btn-primary" role="button">Novo Cliente</a>
+        </div>    
+    </div>
 
 @endsection
