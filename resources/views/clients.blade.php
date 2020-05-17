@@ -13,6 +13,7 @@
                             <th>Idade</th>
                             <th>Endereço</th>
                             <th>E-mail</th>
+                            <th>Ação</th>
                         </tr>
                     </thead>
                     <tbody>
