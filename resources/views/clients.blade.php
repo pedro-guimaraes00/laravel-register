@@ -38,7 +38,8 @@
                 </table>
         </div>
         <div class="card-footer">
-            <a href="/clients/new" class="btn btn-sm btn-primary" role="button">Novo Cliente</a>
+            <a href="/clients/new" class="btn btn-sm btn-primary" role="button">
+                <img src="{{ asset('icons/plus.svg')}}" width="20em" height="20em"> Novo Cliente</a>
         </div>    
     </div>
 

@@ -33,7 +33,8 @@
             @endif
         </div>
         <div class="card-footer">
-            <a href="/departments/new" class="btn btn-sm btn-primary" role="button">Novo Departamento</a>
+            <a href="/departments/new" class="btn btn-sm btn-primary" role="button">
+                <img src="{{ asset('icons/plus.svg')}}" width="20em" height="20em"> Novo Departamento</a>
         </div>
     </div>
 

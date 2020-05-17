@@ -37,7 +37,8 @@
         </table>
     </div>
     <div class="card-footer">
-        <a href="/products/new" class="btn btn-sm btn-primary" role="button">Novo Produto</a>
+        <a href="/products/new" class="btn btn-sm btn-primary" role="button">
+            <img src="{{ asset('icons/plus.svg')}}" width="20em" height="20em"> Novo Produto</a>
     </div>
 </div>
 
