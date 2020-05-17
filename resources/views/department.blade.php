@@ -19,8 +19,12 @@
                             <td>{{ $dept->id }}</td>
                             <td>{{ $dept->name }}</td>
                             <td>
-                                <a href="/departments/edit/{{$dept->id}}" class="btn btn-sm btn-primary">Editar</a>
-                                <a href="/departments/delete/{{$dept->id}}" class="btn btn-sm btn-danger">Apagar</a>
+                                <a href="/departments/edit/{{$dept->id}}" class="btn btn-sm btn-primary">
+                                    <img src="{{ asset('icons/pencil.svg')}}" width="20em" height="20em">
+                                </a>
+                                <a href="/departments/delete/{{$dept->id}}" class="btn btn-sm btn-danger">
+                                    <img src="{{ asset('icons/trash-fill.svg')}}" width="18em" height="18em">
+                                </a>
                             </td>
                         </tr>
                     @endforeach

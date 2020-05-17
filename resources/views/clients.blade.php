@@ -25,8 +25,12 @@
                             <td>{{$cli->adress}}</td>
                             <td>{{$cli->email}}</td>
                             <td>
-                                <a href="/clients/edit/{{$cli->id}}" class="btn btn-sm btn-primary">Editar</a>
-                                <a href="/clients/delete/{{$cli->id}}" class="btn btn-sm btn-danger">Apagar</a>
+                                <a href="/clients/edit/{{$cli->id}}" class="btn btn-sm btn-primary">
+                                    <img src="{{ asset('icons/pencil.svg')}}" width="20em" height="20em">
+                                </a>
+                                <a href="/clients/delete/{{$cli->id}}" class="btn btn-sm btn-danger">
+                                    <img src="{{ asset('icons/trash-fill.svg')}}" width="18em" height="18em">
+                                </a>
                             </td>
                         </tr>
                     @endforeach    
