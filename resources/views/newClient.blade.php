@@ -7,6 +7,7 @@
             <div class="card-border">
                 <div class="card-body">
                     <form action="/clients" method="POST">
+                    @csrf
                         <div class="form-group">
                             <label for="name">Nome do cliente</label>
                             <input type="text" id="name" class="form-control" name="nameClient" placeholder="Nome completo">
