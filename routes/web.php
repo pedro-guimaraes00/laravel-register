@@ -50,6 +50,6 @@ Route::get('/clients', function(){
     return view('clients');
 });
 
-Route::get('/newclient', function(){
+Route::get('/clients/new', function(){
     return view('newClient');
 });
