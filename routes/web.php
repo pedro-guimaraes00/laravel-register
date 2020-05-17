@@ -46,10 +46,5 @@ Route::post('/departments/{id}', 'DepartmentController@update');
 Clients Routes
 --------------------------------------------------------------------------
 */
-Route::get('/clients', function(){
-    return view('clients');
-});
-
-Route::get('/clients/new', function(){
-    return view('newClient');
-});
+Route::get('/clients', 'ClientsController@index');
+Route::get('/clients/new', 'ClientsController@create');
