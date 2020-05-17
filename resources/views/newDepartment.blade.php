@@ -7,7 +7,7 @@
             <form action="/departments" method="POST">
                 @csrf
                 <div class="form-group">
-                    <label for="nameDepartment">Nome do Departamento</label>
+                    <label for="nameDepartment">Novo Departamento</label>
                     <input type="text" class="form-control" name="nameDepartment" id="nameDepartment"
                         placeholder="Departamento">
                 </div>
