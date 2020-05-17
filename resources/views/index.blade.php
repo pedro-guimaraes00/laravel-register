@@ -8,6 +8,7 @@
             setor deseja <b class="font-weight-bold">cadastrar</b>:</p>
         <p class="lead">
           <a href="/products/new" class="btn btn-lg btn-primary">Produtos</a>
+          <a href="/clients/new" class="btn btn-lg btn-primary">Clientes</a>
           <a href="/departments/new" class="btn btn-lg btn-primary">Departamentos</a>
         </p>
 </div>       
