@@ -48,3 +48,4 @@ Clients Routes
 */
 Route::get('/clients', 'ClientsController@index');
 Route::get('/clients/new', 'ClientsController@create');
+Route::post('/clients', 'ClientsController@store');
