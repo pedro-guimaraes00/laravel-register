@@ -43,6 +43,7 @@ class ClientsController extends Controller
         $client->email = $request->input('emailClient');
 
         $client->save();
+        return redirect('/clients');
     }
 
     /**

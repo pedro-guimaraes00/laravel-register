@@ -95,6 +95,7 @@ class ProductsController extends Controller
                 $product->department_id = $request->input('department');
                 
                 $product->save();
+                return redirect('/products');
             }
 
     }
