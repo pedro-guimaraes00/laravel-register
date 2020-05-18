@@ -36,6 +36,10 @@ class DepartmentController extends Controller
      */
     public function store(Request $request)
     {
+        $request->validate([
+            'nameDepartment' => 'required'
+        ]);
+
         $department = new Department;
         $department->name = $request->input('nameDepartment');
         $department->save();
