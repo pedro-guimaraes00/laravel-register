@@ -5,6 +5,7 @@
     <div class="card border">
         <div class="card-body">
             <h5 class="card-title">Cadastro de Clientes</h5>
+            <div class="table-responsive">
                 <table class="table table-ordered table-hover" id="tableClients">
                     <thead>
                         <tr>
@@ -36,6 +37,7 @@
                     @endforeach    
                     </tbody>
                 </table>
+            </div>    
         </div>
         <div class="card-footer">
             <a href="/clients/new" class="btn btn-sm btn-primary" role="button">
