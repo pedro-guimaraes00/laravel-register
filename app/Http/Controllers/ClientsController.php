@@ -40,7 +40,7 @@ class ClientsController extends Controller
             'nameClient' => 'required',
             'ageClient' => 'required',
             'adressClient' => 'required',
-            'emailClient' => 'required'
+            'emailClient' => 'required|email'
         ]);
 
         $client = new Clients;
