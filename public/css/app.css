@@ -4735,8 +4735,8 @@ input[type=button].btn-block {
   }
 
   .navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
   }
 
   .navbar-expand-lg > .container,
@@ -4965,7 +4965,6 @@ input[type=button].btn-block {
   background-color: #fff;
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
-  border-radius: 0.25rem;
 }
 
 .card > hr {
@@ -5488,7 +5487,6 @@ a.badge-dark.focus {
   padding: 2rem 1rem;
   margin-bottom: 2rem;
   background-color: #e9ecef;
-  border-radius: 0.3rem;
 }
 
 @media (min-width: 576px) {
