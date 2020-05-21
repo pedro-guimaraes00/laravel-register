@@ -264,11 +264,6 @@ input {
   overflow: visible;
 }
 
-input,
-select {
-  margin-bottom: 20px;
-}
-
 button,
 select {
   text-transform: none;
