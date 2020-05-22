@@ -51,3 +51,4 @@ Route::get('/clients/new', 'ClientsController@create');
 Route::post('/clients', 'ClientsController@store');
 Route::get('/clients/edit/{id}', 'ClientsController@edit');
 Route::post('/clients/{id}', 'ClientsController@update');
+Route::get('/clients/delete/{id}', 'ClientsController@destroy');

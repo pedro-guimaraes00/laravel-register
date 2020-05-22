@@ -118,6 +118,8 @@ class ProductsController extends Controller
         $product = Products::find($id);
             if(isset($product)) {
                 $product->delete();
+                
+                return redirect('/products');
             }
 
     }

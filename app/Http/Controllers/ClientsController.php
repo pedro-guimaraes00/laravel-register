@@ -108,6 +108,11 @@ class ClientsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $client = Clients::find($id);
+            if(isset($client)) {
+                $client->delete();
+                
+                return redirect('/clients');
+            }
     }
 }
