@@ -87,7 +87,17 @@ class ClientsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $client = Clients::find($id);
+            if(isset($client)){
+                $client->name = $request->input('nameClient');
+                $client->age = $request->input('ageClient');
+                $client->adress = $request->input('adressClient');
+                $client->email = $request->input('emailClient');
+
+                $client->save();
+
+                return redirect('/clients');
+            }
     }
 
     /**
