@@ -24,14 +24,14 @@
                             </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="stockProduct" id="stockProduct"
+                        <input type="number" class="form-control" name="stockProduct" id="stockProduct"
                         placeholder="Quantidade em estoque" required>
                             <div class="invalid-feedback">
                                 O campo é obrigatório.
                             </div>
                     </div>
                     <div class="form-group">
-                        <input type="text" class="form-control" name="priceProduct" id="priceProduct"
+                        <input type="number" class="form-control" name="priceProduct" id="priceProduct"
                         placeholder="Preço" required>
                             <div class="invalid-feedback">
                                 O campo é obrigatório.

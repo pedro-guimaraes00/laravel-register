@@ -14,11 +14,17 @@
                                     <option value="{{ $dept->id }}">{{ $dept->name }}</option>
                                 @endforeach    
                         </select>
+                </div>
+                <div class="form-group">  
                     <input type="text" class="form-control" name="nameProduct" id="nameProduct"
                     placeholder="Produto" value="{{$product->name}}">
-                    <input type="text" class="form-control" name="stockProduct" id="stockProduct"
+                </div>    
+                <div class="form-group">
+                    <input type="number" class="form-control" name="stockProduct" id="stockProduct"
                     placeholder="Quantidade em estoque" value="{{$product->stock}}">
-                    <input type="text" class="form-control" name="priceProduct" id="priceProduct"
+                </div>
+                <div class="form-group">
+                    <input type="number" class="form-control" name="priceProduct" id="priceProduct"
                     placeholder="Preço" value="{{$product->price}}">
                 </div>
                 <button type="submit" class="btn btn-primary btn-sm">Salvar</button>
