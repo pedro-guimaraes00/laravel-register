@@ -2,7 +2,7 @@
 
   <ul class="navbar-nav mr-auto">
     <li @if($current=="index") class="nav-item active" @else class="nav-item" @endif>
-      <a class="nav-link" href="/index">
+      <a class="nav-link" href="/">
         <img src="{{ asset('icons/house-fill.svg')}}" width="24em" height="24em">
       </a>
     </li>
