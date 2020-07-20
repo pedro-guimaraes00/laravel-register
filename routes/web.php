@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
+Route::get('/index', function () {
     return view('index');
 });
 
@@ -52,3 +52,6 @@ Route::post('/clients', 'ClientsController@store');
 Route::get('/clients/edit/{id}', 'ClientsController@edit');
 Route::post('/clients/{id}', 'ClientsController@update');
 Route::get('/clients/delete/{id}', 'ClientsController@destroy');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
